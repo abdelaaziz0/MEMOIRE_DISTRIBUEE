@@ -5,30 +5,33 @@
 ---
 
 ## 📋 Fonctionnalités
--✔️ **Partage de mémoire virtuelle** : Permet à plusieurs processus distants d’accéder à la même mémoire virtuelle.
+✔️ **Partage de mémoire virtuelle** : Permet à plusieurs processus distants d’accéder à la même mémoire virtuelle.
 
--✔️ **Gestion dynamique des pages mémoire** : Transfert de propriété des pages selon les accès des processus.
+✔️ **Gestion dynamique des pages mémoire** : Transfert de propriété des pages selon les accès des processus.
 
--✔️ **Traitement des erreurs de segmentation (SIGSEGV)** : Capture des accès non autorisés pour déclencher la mise à jour des pages.
+✔️ **Traitement des erreurs de segmentation (SIGSEGV)** : Capture des accès non autorisés pour déclencher la mise à jour des pages.
 
--✔️ **Allocation cyclique des pages** : Répartition équitable des pages entre les processus au lancement.
+✔️ **Allocation cyclique des pages** : Répartition équitable des pages entre les processus au lancement.
 
--✔️ **Communication inter-processus via sockets TCP/IP** : Chaque processus communique avec les autres pour synchroniser les accès mémoire.
+✔️ **Communication inter-processus via sockets TCP/IP** : Chaque processus communique avec les autres pour synchroniser les accès mémoire.
 
--✔️ **Utilisation de `pthread` et `semaphore` pour la synchronisation**.
+✔️ **Utilisation de `pthread` et `semaphore` pour la synchronisation**.
 
--✔️ **Lancement automatisé des processus distants via SSH avec `dsmexec`**.
+✔️ **Lancement automatisé des processus distants via SSH avec `dsmexec`**.
 
--✔️ **Filtrage et redirection des sorties standard et erreur des processus distants**.
+✔️ **Filtrage et redirection des sorties standard et erreur des processus distants**.
 
--✔️ **Interopérabilité avec d'autres implémentations DSM via des structures de communication normalisées**.
+✔️ **Interopérabilité avec d'autres implémentations DSM via des structures de communication normalisées**.
 
 ---
 
 ## 🔧 Prérequis
 📌 **Système** : Linux avec support des sockets et de la mémoire partagée.
+
 📌 **Compilateur** : GCC
+
 📌 **Outils** : `make`, `valgrind`, `ssh`, `netstat`, `ps`
+
 📌 **Bibliothèques** : `pthread`, `semaphore`, `sys/mman.h`, `fcntl.h`
 
 ---
