@@ -6,13 +6,21 @@
 
 ## 📋 Fonctionnalités
 -✔️ **Partage de mémoire virtuelle** : Permet à plusieurs processus distants d’accéder à la même mémoire virtuelle.
+
 -✔️ **Gestion dynamique des pages mémoire** : Transfert de propriété des pages selon les accès des processus.
+
 -✔️ **Traitement des erreurs de segmentation (SIGSEGV)** : Capture des accès non autorisés pour déclencher la mise à jour des pages.
+
 -✔️ **Allocation cyclique des pages** : Répartition équitable des pages entre les processus au lancement.
+
 -✔️ **Communication inter-processus via sockets TCP/IP** : Chaque processus communique avec les autres pour synchroniser les accès mémoire.
+
 -✔️ **Utilisation de `pthread` et `semaphore` pour la synchronisation**.
+
 -✔️ **Lancement automatisé des processus distants via SSH avec `dsmexec`**.
+
 -✔️ **Filtrage et redirection des sorties standard et erreur des processus distants**.
+
 -✔️ **Interopérabilité avec d'autres implémentations DSM via des structures de communication normalisées**.
 
 ---
